@@ -100,9 +100,11 @@ precision = precision_score(y_test, y_pred)
 recall = recall_score(y_test, y_pred)
 
 
+
 # In[9]:
 
 
+svclassifier = SVC(gamma=0.0001, C=1000)
 y_pred = svclassifier.predict(X_test)
 
 accuracy = metrics.accuracy_score(y_test, y_pred)
